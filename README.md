@@ -8,10 +8,8 @@
 #### Have fun with my code and feel free to give me any comments
 
 #### Connect me via:
-[Facebook](http://facebook.com/hao.nguyenle.395)
-
-[Email](mailto://hoaihaopro@gmail.com)
-
+[Facebook](http://facebook.com/hao.nguyenle.395)<p>
+[Email](mailto://hoaihaopro@gmail.com)<p>
 ![Hao](https://www.facebook.com/photo?fbid=815550805681208&set=a.104350763467886)
 
 #### © 2021 HaoNLH
