@@ -9,7 +9,9 @@
 
 #### Connect me via:
 [Facebook](http://facebook.com/hao.nguyenle.395)
-<p>[Email](mailto://hoaihaopro@gmail.com)</p>
+
+[Email](mailto://hoaihaopro@gmail.com)
+
 ![Hao](https://www.facebook.com/photo?fbid=815550805681208&set=a.104350763467886)
 
 #### © 2021 HaoNLH
