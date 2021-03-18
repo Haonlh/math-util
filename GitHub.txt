@@ -11,3 +11,26 @@ git push -u origin main
 git remote add origin https://github.com/Haonlh/math-util.git
 git branch -M main
 git push -u origin main
+
+========================================
+
+CÂU LỆNH LÀM LẦN ĐẦU TIÊN CHO MÁY MỚI CÀI GIT
+
+ - git config --global user.name tên-git-account
+ - git config --global user.email email-đăng-kí-github
+
+CÂU LỆNH LÀM LẦN ĐẦU TIÊN CHO KHO MỚI
+ - tạo sẵn kho trên server 
+ - tạo project cũng tên kho trên netbeans, eclipse,...
+ - tạo file .gitignore (copy project cũ sang hoặc lên gitigore.io) đặt vào thư mục chứa code ở local
+ GÕ LỆNH
+ - git init
+ - git add*
+ - git commit -m "thông-điệp-của-bạn"
+ - git branch -M main 
+ - git remote add origin http://github.com//tên-acount-git/tên kho.git
+ - git push -u origin main
+
+
+
+
