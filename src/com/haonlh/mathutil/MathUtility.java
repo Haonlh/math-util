@@ -29,7 +29,7 @@ public class MathUtility {
             return 1; // 0!, 1!
         }
 
-        long result = 0; // giả bộ
+        long result = 1; // giả bộ
         for (int i = 1; i <= n; i++) {
             result *= i;
         }

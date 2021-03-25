@@ -73,7 +73,7 @@ public class MathUtilityTest {
     // ném ngoaijn lệ khi n cà chớn !!
     // ta cần kỹ thuật bắt ngoại lệ, đúng ngoại lệ cần bắt xuất hiện
     // ta có xanh
-}cd
+}
 
 // Quy ước màu xanh: nếu tất cả các lời gọi hàm getFactrial();
 // Đều trả về giá trị đúng như kỳ vọng, nói cách khác tất cả các hàm assertEquals() đều so sánh
