@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.haonlh;
+package com.haonlh.mathutil;
 
 /**
  *
@@ -20,7 +20,7 @@ public class MathUtility {
     // 21! tràn kiểu long, hơn 18 số 0
     // bài này ta tính từ 0..20!. Âm ko tính dc 0! = 1! = 1
     public static long getFactorial(int n) {
-        if (n < 0 || n == 1) {
+        if (n < 0 || n > 20) {
             throw new IllegalArgumentException("n must be between 0..20");
         }
 
@@ -31,7 +31,7 @@ public class MathUtility {
 
         long result = 0; // giả bộ
         for (int i = 1; i <= n; i++) {
-            result *= 1;
+            result *= i;
         }
 
         return result; // nhân từ 2 3 4 5 6 7 8

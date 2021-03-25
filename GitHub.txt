@@ -37,7 +37,9 @@ CÂU LỆNH LÀM HẰNG NGÀY, TỨC LÀ MÌNH, BẠN BÈ, TEAM SỬA CODE VÀ �
  - Luôn đứng ở thư mục chứa code
 
 GÕ LỆNH
- - 
+ - git add * add . nhớ là đứng ở kho local
+ - git commit -m "bạn-sửa-gì-vậy-nói-tớ-biết"
+ - git push 
 
 
 
@@ -46,14 +48,58 @@ GÕ LỆNH
 
 * Lưu Ý: 
  -> CONFLICT 
+  xảy ra khi ta sửa trực tiếp trên server hoặc có ai đó (trong team làm việc) đã sửa trên server và ta chưa kịp lấy về để đồng bộ local, mà ta cứ nghĩ server và local đang giống nhau và ta thêm ở local
+  khi ta đẩy lên server, thì bị mâu thuẩn: local đè lên server, đè luôn phần sửa của người khác hay ta nên merge với họ???
+  tự ta phải cân nhắc và push lại
+  -> Việc ddaayi tiên phải làm: đồng bộ local với server, ko lo mất phẩn mình đã sửa qua câu lệnh: git pull
+
+
+  -> local file bị conflict sẽ dc gom cả cái của ta local, cái của server mà ta ko có. Dùng kí hiệu >>>>>>>>>>>>, HEAD để nó đánh dấu
+  Ta tự merge, gom .... 
+  push lại như truyền thống
 
  -> TRANG TRÍ CÁI THƯ MỤC/KHO/REPO/REPOSITORY CHO ĐẸP
+ 	- Ta tạo lại file README.md thả vào trong kho, ngay gốc kho - thư mục code
+	- cú pháp theo ngôn ngữ định dạng MARK DOWN
+
+==========================================================================
+CONTINOUS INTERGRATION - TÍCH HỢP LIÊN TỤC
+ - Là kỹ thuật đảm bảo rằng code lên server phải chạy ổn. Chạy ổn tức là các hàm, các Class phải dc text kỹ.
+ - Test kỹ tức là ta phải đảm bảo rằng hàm ở local đã dc chạy thử với data giả
+ - Ví dụ hàm getFactorial() phải cẩn dc test với bộ dữ liệu đầu vào, xem kết quả trả ra có đúng ko ?
+ - Ví dụ ta dựng bộ data kiểm thử - test sample data
+
+  INPUT		Output/Expected (Kỳ vọng)                     Actual - chạy thực tế là gì
+    1                1                                                10 -> có chuyện
+    0                1      
+    1                1      
+    1                1      
 
 
 
+Cơ chế này DEV f làm ở local trc khi đưa code lên GitHub
+ - Làm sao để làm: 
+   1. Trâu bò bằng tay, manual test
+				main(){
+					gọi hàm với data đưa vào, chạy thử coi nó có trả ra kết quả như kỳ vọng ko ?
+					getFactorial(5); có ra 120 ko?
+					}
+				Dùng mắt nhìn, kết luận đúng sai
+    2. Xịn xò: tự động hóa với chơi với màu sắc, MĂT VẪN PHẢI NHÌN, CHỈ NHÌN XANH ĐỎ
+MÀU ĐỎ: CODE TRỤC TRẶC DO ACTUAL KO GIÓNG EXPECTED
+MÀU XANH: CODE NGON, VÌ HÀM TRẢ RA GIÔNG VỚI KỲ VỌNG
 
+NẾU MÀU XANH: TẤT CẢ PHẢI XANH
+NẾU MÀU ĐỎ: CHỈ CÓ 1 THẰNG ĐỎ, COI NHƯ BỎ - HÀM CHẠY KO ỔN DỊNH
 
-
+TA CẦN CODE PHẨN NÀY ĐỂ TEST CODE CỦA TA, CODE ĐỂ TEST CODE - TEST AUTOMATION
+TA CẦN THƯ VIỆN PHỤ TRỢ ĐỂ GIÚP, UNIT TEST FRAMEWORK
+* JAVA : JUnit. TestNG
+* C#   : NUnit, MSTest, xUnit,...
+* C++  : CPP Unit
+* PHP  : PHP Unit
+....
+Mỗi NNTL có bộ thư viện tương ứng giúp test
 
 ===================================================
 
