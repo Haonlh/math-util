@@ -1,5 +1,7 @@
 ## Welcome to Math-Util repository. This repo offers various math methods used projects as the helper ones.
 
+[![MathUtil project | CI process included | © 2021 by Haonlh](https://github.com/Haonlh/math-util/actions/workflows/mathutil-ci-action.yml/badge.svg)](https://github.com/Haonlh/math-util/actions/workflows/mathutil-ci-action.yml)
+
 ### _You will find in this repo the follwing stuff:_
 * The README.md file itselt to demonstrate the MARK DOWN syntax
 * .gitignore file itselt to notify Git Tool how to upload source Code
